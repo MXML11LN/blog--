@@ -1,0 +1,67 @@
+//main grid ================================================
+.container {
+    margin: 0 auto;
+    max-width: $maxWidthContainer+px;
+    @media (max-width:$md1+px){
+        max-width: 750px;
+    }
+    @media (max-width:$md2+px){
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+//default body &  all pages styles ========================================
+body{
+    font-size: 14px;
+    color: $colorDark;
+    &.lock{
+        overflow: hidden;
+    }
+}
+.page{
+    flex: 1 1 auto;
+    margin: 90px 0 0 0;
+    @media (max-width:$md3+px) {
+        padding: 33px 0 0 0;
+    }
+}
+// all ui styles ========================================
+.title {
+    font-size: 44px;
+    font-weight: 700;
+    color: $colorDark;
+    line-height: 60 / 44 * 100%;
+}
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.5 / 16 * 100%;
+    color: $colorDark;
+    @media (max-width:$md3+px) {
+        padding: 33px 0 0 0;
+    }
+}
+
+.btn {
+    height: 47px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29 / 20 * 100%;
+    background: $colorRed;
+    color:#FFFFFF;
+    border-radius: 2px;
+    display: inline-flex;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    @media (min-width: 992px) { 
+        &:hover{
+            background-color: red;
+        }
+    }
+    & ._fw {
+        width: 100%;
+    }
+}
