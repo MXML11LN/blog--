@@ -167,10 +167,26 @@
 //featured works section =============================================================
 .featured-works {
     padding: 30px 0 80px 0;
+    @media (max-width:$md3+px) {
+        padding: 30px 0 30px 0;
+    }
 }
 .fetured-works {
-		&__title {
-            margin: 0 0 20px 0;
-		}
+	&__title {
+        margin: 0 0 20px 0;
+	}
+    &__item{
+        @media (max-width:$md3+px) {
+        display: flex;
+        overflow: auto;
+        .works-item{
+            @media (max-width:$md3+px) {
+                flex: 0 0 90%;
+                margin: 0 15px 0 0;
+            }
+        }
+        }
+    }
 }
+
 @import "_works";

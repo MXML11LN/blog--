@@ -1,0 +1,38 @@
+.footer {
+    text-align: center;
+    padding: 50px 0;
+
+    &__content {
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__copywrite {
+        font-size: 14px;
+        line-height: 21 / 14 * 100%;
+        text-align: center;
+        color: #21243D;
+    }
+}
+.container {
+}
+.social {
+    display: flex;
+    margin: 0 0 26px 0;
+    padding-bottom: 26px;
+}
+.social-item {
+    width: 30px;
+    height: 30px;
+    margin: 0 17px;
+    transition: all 0.3 ease 0s;
+    @media (min-width:$md2+px) {
+        &:hover{
+            opacity: 0.4;
+        }
+    }
+}
