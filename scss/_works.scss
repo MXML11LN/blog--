@@ -1,0 +1,30 @@
+.works {
+
+    &__img {
+        flex: 0 0 246px;
+        border-radius: 6px;
+        min-height: 180px;
+    }
+
+    &__body {
+    }
+
+    &__title {
+    }
+
+    &__info {
+    }
+
+    &__year {
+    }
+
+    &__category {
+    }
+
+    &__text {
+    }
+}
+.works-item {
+    display: flex;
+    align-items: flex-start;
+}

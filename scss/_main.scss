@@ -1,3 +1,6 @@
+
+//greetings section =============================================================
+
 .greeting {
     padding: 33px 0 71px 0;
     @media (max-width:$md1+px) {
@@ -69,3 +72,105 @@
         }
     }
 }
+//recent-posts section =============================================================
+.recent-posts {
+    background:  #EDF7FA;
+    padding: 25px 0 13px 0;
+    @media (max-width:$md3+px) {
+        padding: 25px 0 23px 0;
+    }
+    &__header {
+        display: flex;
+        margin: 0 0 20px 0;
+    }
+
+    &__title {
+        flex: 1 1 auto;
+        padding: 0 20px 0 0;
+        
+    }
+
+    &__link {
+        font-size: 16px;
+        text-align: right;
+        line-height: 23px;
+        color: $colorAqua;
+        flex: 0 0 auto;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+
+    &__items {
+        margin: -10px -10px;
+        @media (min-width: $md3+px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__column {
+        flex: 0 1 50%;
+        padding: 10px 10px;
+        margin: 0 0 17px 0;
+    }
+}
+.recent-post {
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+    padding: 20px;
+    @media (min-width: $md3+px) {
+        padding: 15px;
+    }
+    *:last-child{
+        margin-bottom: 0;
+    }
+    &__title {
+        display: inline-block;
+        margin: 0 0 17px 0;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 38 / 26 * 100%;
+        color: $colorDark;
+        transition: all 0.3s ease 0s;
+        @media (min-width: $md2+px) {
+            &:hover{
+                color: $colorRed;
+            }
+        }
+        @media (max-width:$md3+px) {
+            font-size: 22px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__info {
+        font-size: 18px;
+        color: $colorDark;
+        line-height: 26 / 18 *100%;
+        span{
+            margin: 0 10px;
+        }
+        margin: 0 0 15px 0;
+        @media (max-width:$md3+px) {
+            font-size: 16px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__text{
+        margin: 0 0 15px 0;
+    }
+}
+//featured works section =============================================================
+.featured-works {
+    padding: 30px 0 80px 0;
+}
+.fetured-works {
+		&__title {
+            margin: 0 0 20px 0;
+		}
+}
+@import "_works";
