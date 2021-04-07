@@ -1,8 +1,8 @@
 .footer {
     text-align: center;
     padding: 50px 0;
-
-    &__content {
+    @media (max-width: $md3+px) {
+        padding: 25px 0;
     }
 
     &__social {
@@ -17,8 +17,6 @@
         text-align: center;
         color: #21243D;
     }
-}
-.container {
 }
 .social {
     display: flex;

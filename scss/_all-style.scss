@@ -18,6 +18,16 @@ body{
         overflow: hidden;
     }
 }
+
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    &._loaded{
+    }
+}
 .page{
     flex: 1 1 auto;
     margin: 90px 0 0 0;
