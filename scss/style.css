@@ -267,6 +267,11 @@ body.lock {
 }
 
 /*header ==========================================================================================*/
+.header {
+  position: relative;
+  z-index: 99;
+}
+
 .header__content {
   margin: 0 auto;
   max-width: 1052px;
@@ -716,6 +721,14 @@ body.lock {
   color: #21243D;
   display: inline-block;
   margin: 0 0 15px 0;
+  -webkit-transition: all 0.3 ease 0s;
+  transition: all 0.3 ease 0s;
+}
+
+@media (min-width: 991.98px) {
+  .works__title:hover {
+    color: #FF6464;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -780,6 +793,26 @@ body.lock {
 
 .works-item *:last-child {
   margin-bottom: 0;
+}
+
+.works__main-title {
+  margin-bottom: 45px;
+}
+
+@media (max-width: 767.98px) {
+  .works__main-title {
+    margin-bottom: 20px;
+  }
+}
+
+.works__items {
+  padding-bottom: 60px;
+}
+
+@media (max-width: 767.98px) {
+  .works__items {
+    padding-bottom: 30px;
+  }
 }
 
 /*main===========================================================================================*/
