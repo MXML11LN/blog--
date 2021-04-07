@@ -130,10 +130,6 @@ h1, h2, h3, h4, h5, h6 {
 /*   Default font */
 /* Variables*/
 /*  fonts & Icons ================================================================================*/
-body {
-  font-family: "Heebo";
-}
-
 /* main style=====================================================================================*/
 .container {
   margin: 0 auto;
@@ -156,6 +152,7 @@ body {
 body {
   font-size: 14px;
   color: #21243D;
+  font-family: "Heebo";
 }
 
 body.lock {
@@ -195,7 +192,7 @@ body.lock {
   line-height: 136.36364%;
 }
 
-.text {
+.text, .article__text p {
   font-weight: 400;
   font-size: 16px;
   line-height: 146.875%;
@@ -203,7 +200,7 @@ body.lock {
 }
 
 @media (max-width: 767.98px) {
-  .text {
+  .text, .article__text p {
     padding: 33px 0 0 0;
   }
 }
@@ -950,5 +947,75 @@ body.lock {
 
 .blog-sep {
   margin: 0 15px;
+}
+
+.article__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 147.05882%;
+  margin-bottom: 30px;
+  color: inherit;
+}
+
+@media (max-width: 767.98px) {
+  .article__title {
+    font-size: 30px;
+  }
+}
+
+.article__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 23px;
+}
+
+.article__year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 333.33333%;
+  width: 62px;
+  height: 25px;
+  background: #FF7C7C;
+  border-radius: 16px;
+  padding: 0 10px;
+  margin-right: 17px;
+}
+
+.article__category {
+  font-size: 20px;
+  line-height: 145%;
+  color: #21243D;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 767.98px) {
+  .article__category {
+    font-size: 18px;
+  }
+}
+
+.article__text p {
+  margin: 0 0 20px 0;
+}
+
+.article__text img {
+  max-width: 100%;
+  margin: 0 0 20px 0;
 }
 /*# sourceMappingURL=style.css.map */

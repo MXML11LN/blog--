@@ -14,6 +14,7 @@
 body{
     font-size: 14px;
     color: $colorDark;
+    font-family: $fontFamily;
     &.lock{
         overflow: hidden;
     }

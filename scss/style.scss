@@ -8,10 +8,6 @@
 //&display=swap;
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
 
-body{
-    font-family: $fontFamily;
-}
-
 //icons
 //@import "icons";
 
@@ -34,3 +30,7 @@ body{
 //blog page style====================================================================================
 @import "_blog";
 //blog page style====================================================================================
+
+//article page style====================================================================================
+@import "_article";
+//article page style====================================================================================
